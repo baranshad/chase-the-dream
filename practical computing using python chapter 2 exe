@@ -1,0 +1,12 @@
+#%% 2.1 
+count=0
+for number in range(100,1000):
+    if number % 17 == 0 : 
+        count += 1 
+        print(number)
+    else:
+        continue
+    number += number
+   # count += 1  here is also correct 
+    
+print("sequence", count, "number") 
