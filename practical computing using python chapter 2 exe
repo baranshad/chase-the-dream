@@ -10,3 +10,10 @@ for number in range(100,1000):
    # count += 1  here is also correct 
     
 print("sequence", count, "number") 
+
+#%% 2.6
+char='alphebetical'
+for i in range(0,len(char)):
+    if i % 3 == 2:
+       print(char[i],end="")
+    # i= i+1 add this is also correct 
