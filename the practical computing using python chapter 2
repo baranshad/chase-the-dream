@@ -1,0 +1,21 @@
+#%% 
+# 2.21
+# 1,prompt the user for a number 
+# 2, convert the input string to an int.
+# 3, if the input is even, add it to the running sum.
+# 4, if the input is not even(odd), print an error message--don't add it into the sum, just continue on.
+# 5, if the input is the special character ".", end and print the final sum 
+# initialize the input number and the sum   
+number_str=input("number:")
+the_sum=0 
+
+while number_str != "." :  # when the input is not the special character 
+    number= int(number_str)
+    if number % 2 == 1: 
+        print("error")
+        number_str=input("number：")
+        continue # also can use else: here then no need input above 
+    the_sum+= number  # at the end of the part in while the sum and numbers should be 
+    number_str= input("number：") # updated then the loop will continue or it will not stop 
+print("the sum is:", the_sum)
+    
