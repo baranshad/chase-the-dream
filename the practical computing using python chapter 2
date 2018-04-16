@@ -19,3 +19,17 @@ while number_str != "." :  # when the input is not the special character
     number_str= input("number：") # updated then the loop will continue or it will not stop 
 print("the sum is:", the_sum)
     
+#%% 
+number=int(input("number:"))
+# count=0
+while number > 1: 
+    if number % 2 == 0:
+       number=number/2
+       print(number, "is even")
+    else: 
+         number= 3*number +1 
+         print(number, "is odd") 
+    # count+=1
+else:
+    print()
+   # print("sequence is ", count, "number long")
