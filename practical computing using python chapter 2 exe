@@ -17,3 +17,16 @@ for i in range(0,len(char)):
     if i % 3 == 2:
        print(char[i],end="")
     # i= i+1 add this is also correct 
+
+#%% 2.10 
+import math
+number_str=input("number:")
+number=int(number_str)
+
+while math.sqrt(number) % 1 != 0 :
+        number=int(input("number")) # this cannot be delete , need to update input number 
+        # if delete, then non stopping print 
+        print(" the number is not perfect square", number)
+else: 
+        print(" the number is perfect square", number)
+       
