@@ -81,4 +81,24 @@ while i<= (math.sqrt(number)):
         i+=1 # loop all i 
         print("this number is a prime",number) #some bug 
   
- 
+ #%% 20 
+def quadratic(a,b,c):
+    x=b*b-4*a*c
+    return(x)
+n1=int(input("a is:"))
+n2=int(input("b is:"))
+n3=int(input("c is:"))
+result=quadratic(n1,n2,n3)
+if result == 0:
+    x=-n2
+    print("we have one root:", x)
+if result >0: 
+    x1=-n2+(math.sqrt(quadratic(n1,n2,n3)))/(4*n1*n3)
+    x2=-n2-(math.sqrt(quadratic(n1,n2,n3)))/(4*n1*n3)
+    print("we have two roots:",x1,x2)
+if result <0:
+    x1=-n2+(math.sqrt(-quadratic(n1,n2,n3)))/(4*n1*n3)*(1j)
+    x2=-n2-(math.sqrt(-quadratic(n1,n2,n3)))/(4*n1*n3)*(1j)
+    print("we have two imaginary roots:",x1,x2)
+    
+    
