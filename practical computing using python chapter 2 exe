@@ -101,4 +101,13 @@ if result <0:
     x2=-n2-(math.sqrt(-quadratic(n1,n2,n3)))/(4*n1*n3)*(1j)
     print("we have two imaginary roots:",x1,x2)
     
-    
+ #%% 22 
+count=0
+nu=int(input("enter an integer greater than 2:")) 
+while nu > 2: 
+      nu=math.sqrt(nu)
+      count+=1
+      print(count,":",nu)
+      if nu < 2:
+           break
+           
