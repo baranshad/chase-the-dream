@@ -16,4 +16,37 @@ for char in y :
     if char.islower():
         print(char,end='')
         
-        
+#%% 7
+x='acegikmoqsuwy'
+x.lower()
+y='+bdfhjlnprtvxz'
+y[1].islower() #check if it is lower or not 
+for char in y : 
+    if char.islower():
+        print(char,end='')
+#%% 8
+'5'+'4'
+5+4.0        
+
+#%% 9 
+x='this is a test' 
+print(x*3) # this is a testthis is a testthis is a test 
+
+#%% 10 
+S="I had a cat named amanda when I was little" 
+count=0 
+i=0
+while i < len(S): 
+    if S[i]== "a":
+        count += 1 
+        i += 1
+print(count)
+
+#%% 11 
+s="Topkapi"
+s.find("kap")
+
+#%% 19
+s="NEW YORK" 
+first, second=s.split(' ')
+first.capitalize()+' '+second.capitalize()
