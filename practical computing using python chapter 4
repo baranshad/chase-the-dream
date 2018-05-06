@@ -1,0 +1,115 @@
+## chapter 4
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 19 06:41:36 2018
+
+@author: user
+"""
+#%%
+'hello world'[0]
+'hello world'[-1]
+my_str='mellow yellow'
+my_str.find('z')
+
+#%% 
+print('{:>10s} is {:<10d} years old.'.format('Bill',25))
+'{:^6}'.format('zip')
+
+#%% 4.4.3 floating point precision descriptor 
+import math 
+print(math.pi)
+print("pi is {:.4f}" .format(math.pi))
+print("pi is {:8.4f}" .format(math.pi)) # 8 is width, 4f is precision 
+print("pi is {:8.2f}" .format(math.pi))
+print("the word {} has {} letters.".format("mississippi",11))
+#%% 
+month="June"
+day=5
+year=2011
+print("the date is {} {}, {}".format(month, day, year))
+
+#%% 4.5 control and strings 
+river="mississippi"
+river.find("p")
+len(river)
+range(len(river))
+
+for index in range(len(river)):
+    print(index, end=' ')
+for index in range(len(river)):
+    print(river[index], end='')
+    
+#%% coding 4.1 
+river='mississippi'
+target=input('input the character to find:')
+for index in range(len(river)):
+    if river[index]== target:
+        print("letter found at index:", index)
+        break 
+else:
+    print('letter', target, 'not found in', river)
+    
+#%% condinig 4.2 
+river='mississippi'
+target=input('input the character to find:')
+for index, letter in enumerate(river):
+    if letter == target:
+        print("letter found at index:", index)
+        break
+else: 
+    print('letter', target, 'not found', river)
+    
+#%% 
+name='John marwood cleese'
+first,middle,last=name.split()
+transformed=last+','+first+''+middle
+print(transformed)
+
+print(first)
+line='bob,carol,ted,alice'
+first,second,third,fourth=line.split(',')
+print(first, second, third, fourth)
+op1,op2="A+B".split('+')
+print(op1,op2)
+
+#%%  coding list 4.4 
+import string 
+original_str=input('input a string:')
+modified_str=original_str.lower()
+
+bad_chars=string.whitespace+string.punctuation
+
+for char in modified_str:
+    if char in bad_chars:
+        modified_str=modified_str.replace(char,'')
+        
+        
+if modified_str == modified_str[::-1]:
+    print(\
+'The original string is :  {}\n\ the modified string is :  {}\n\ the reversal is : {}\n\ String is a palidrome' .format (original_str, modified_str, modified_str[::-1]))
+else: 
+    print(\
+'The original string is : {}\n\ the modified string is : {}\n\ the reversal is :  {}\n\ String is not a palidrom'.format(original_str, modified_str, modified_str[::-1]))
+    
+#%% 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
