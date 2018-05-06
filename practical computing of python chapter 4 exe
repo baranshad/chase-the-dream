@@ -1,0 +1,19 @@
+#%%  5 
+x='water'
+x.replace('w','c',1)
+
+#%% 6 
+S='what is your name ?'
+print(S[::2])
+print(S[2:8:-1])
+
+#%%  6
+x='acegikmoqsuwy'
+x.lower()
+y='+bdfhjlnprtvxz'
+y[1].islower() #check if it is lower or not 
+for char in y : 
+    if char.islower():
+        print(char,end='')
+        
+        
